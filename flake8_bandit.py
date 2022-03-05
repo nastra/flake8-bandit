@@ -112,7 +112,7 @@ class BanditTester(object):
             metaast=BanditMetaAst(),
             testset=BanditTestSet(BanditConfig(), profile=config.profile),
             debug=False,
-            nosec_lines=[],
+            nosec_lines={},
             metrics=Metrics(),
         )
         bnv.generic_visit(self.tree)
